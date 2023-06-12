@@ -1,15 +1,15 @@
 import { fromEvent, Observable } from "rxjs";
 import { debounceTime, pluck, map, mergeAll } from "rxjs/operators";
 import { ajax } from "rxjs/ajax";
-import { GithubUser } from "./interfaces/github-user-interface";
-import { GithubUsersResp } from "./interfaces/github-users-interface";
+/* import { GithubUser } from "./interfaces/github-user-interface"; */
+/* import { GithubUsersResp } from "./interfaces/github-users-interface"; */
 
 const body = document.querySelector('body');
 const input = document.createElement('input');
 const orderList = document.createElement('ol');
 body.append(input, orderList);
 
-const showUsers = ( users: GithubUser[]) => {
+/* const showUsers = ( users: GithubUser[]) => {
     console.log(users);
     orderList.innerHTML = '';
 
@@ -31,8 +31,8 @@ const showUsers = ( users: GithubUser[]) => {
 
         orderList.append( li )
     }
-}
-
+} */
+/* 
 const url = 'https://api.github.com/search/users?q='
 
 const event = fromEvent<KeyboardEvent>(document, 'keyup');
@@ -48,3 +48,4 @@ event.pipe(
     mergeAll<GithubUsersResp>(),
     pluck<GithubUsersResp, GithubUser[]>('items')
 ).subscribe(  showUsers )
+ */

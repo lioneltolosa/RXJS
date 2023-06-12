@@ -35,16 +35,16 @@ const user: Usuario[] = [
     { id: 'fher', autenticado: true, token: 'ABC123' },
 ];
 
-const state$ = from( user ).pipe(
+/* const state$ = from( user ).pipe(
     scan<Usuario>( (acc, cur) => {
         return { ...acc, ...cur }
     }, { edad: 33 })
-);
+); */
 
-const id$ = state$.pipe(
+/* const id$ = state$.pipe(
     map( state => state.id )
 );
 
 id$.subscribe( console.log );
-
+ */
 

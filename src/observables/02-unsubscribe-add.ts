@@ -28,7 +28,7 @@ const subscription2 =  intervalos$.subscribe(observer);
 const subscription3 =  intervalos$.subscribe(observer);
 
 subscription1.add( subscription2 )
-             .add( subscription3 )
+            /*  .add( subscription3 ) */
 
 setTimeout(() => {
     subscription1.unsubscribe();

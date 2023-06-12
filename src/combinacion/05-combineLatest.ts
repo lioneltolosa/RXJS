@@ -8,7 +8,7 @@ import { pluck } from 'rxjs/operators';
 //     keyup$.pipe( pluck('type') ), 
 //     click$.pipe( pluck('type') )
 // ).subscribe( console.log );
-
+/* 
 const input1 = document.createElement('input');
 const input2 = document.createElement('input');
 
@@ -30,3 +30,4 @@ combineLatest(
     getInputStream( input1 ),
     getInputStream( input2 ),
 ).subscribe( console.log )
+ */
